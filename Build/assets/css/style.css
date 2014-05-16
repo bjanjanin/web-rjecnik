@@ -1,0 +1,38 @@
+/* Write your CSS! */
+html {
+  height: 100%;
+  border-top: 5px solid purple;
+  font-size: 120%; }
+
+body {
+  border-top: 5px solid navy;
+  padding: 5% 5%;
+  max-width: 35em;
+  margin: -5px auto 0 auto;
+  font-family: "proxima-nova", verdana, sans-serif; }
+
+h1 {
+  font-weight: normal; }
+
+h2 {
+  color: silver;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-weight: normal; }
+
+p, dl {
+  color: #555; }
+
+nav {
+  margin-top: 4rem;
+  border-top: 4px solid lavender; }
+
+nav ul {
+  padding-left: 0; }
+
+nav li {
+  display: inline; }
+
+section {
+  padding-bottom: 4rem;
+  border-bottom: 4px solid lavender; }
