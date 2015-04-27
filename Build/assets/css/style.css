@@ -1,114 +1,114 @@
-@charset "UTF-8";
-/* Write your CSS! */
-a, a:visited {
+a:link, a:visited {
   color: #CA3538;
   text-decoration: none;
-  border-bottom: none; }
+  border-bottom: 2px solid transparent; }
 
 a:hover {
   color: #CA3538;
-  border-bottom: 1px solid #CA3538; }
+  border-bottom: 2px solid #CA3538; }
 
 a:active {
-  color: red; }
+  color: red;
+  border-bottom: 2px solid red; }
 
 abbr[title] {
   cursor: help;
   border: none; }
 
 html {
-  font-size: 120%;
-  color: #333; }
+  font: 62.5%/1.5 "skolar", verdana, sans-serif;
+  color: #444;
+  font-weight: 300;
+  border-left: 0;
+  background: #f2f2f2; }
 
 body {
-  background: white;
-  padding: 120px 5%;
-  max-width: 30em;
-  margin: 0 auto;
-  font-family: "skolar", verdana, sans-serif; }
-
-h1, h2, h3, h4, p {
-  text-rendering: optimizeLegibility; }
+  font-size: 1rem; }
 
 h1 {
-  font-size: 60px;
-  font-size: 1.8em;
-  color: #162F46;
-  font-weight: 300;
-  color: #ca3538;
-  line-height: 1.3;
-  margin-bottom: 1rem;
-  position: relative; }
-
-h1 em {
-  font-style: italic;
-  display: block;
-  color: #333; }
-
-h1:after {
-  content: "—";
-  display: block;
-  margin-top: 1rem;
-  color: #ccc; }
+  font-size: 6.8rem;
+  color: #111;
+  line-height: 1.2;
+  margin: 12rem 0 6rem 0;
+  text-align: center; }
 
 h2 {
-  font-size: 1em;
-  color: #222;
-  font-weight: 400; }
+  font-size: 2rem;
+  color: #000;
+  font-weight: 600; }
 
-.letter {
-  color: #666;
-  float: left;
-  margin: 0;
-  margin-left: -100px;
-  line-height: 1.2;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  text-align: right; }
+.slovo {
+  color: #111;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 8rem; }
 
+@media only screen and (min-width: 860px) {
+  .slovo {
+    float: left;
+    margin-left: -8rem;
+    text-align: center; } }
 h3 {
   line-height: 1.4;
-  color: #222;
-  font-size: 1em;
+  padding-top: 8rem;
+  color: #000;
+  font-size: 2rem;
   font-weight: 600; }
 
 p {
   color: #666;
-  margin-top: 1rem;
-  margin-bottom: 3rem; }
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 300; }
 
 nav {
-  background: #D1EBF5;
+  background: #fff;
   width: 100%;
   position: fixed;
   opacity: .95;
   left: 0;
   top: 0;
-  font-size: 1em;
-  text-transform: lowercase;
-  font-variant: small-caps; }
+  font-size: 2rem;
+  font-weight: bold; }
 
 nav ul {
   padding-left: 0;
-  margin: 10px 0;
+  margin: 8px 0;
   text-align: center; }
 
 nav li {
   text-align: center;
   display: inline-block; }
 
-nav a, nav a:visited {
+nav a:link, nav a:visited {
   display: inline-block;
-  padding: 4px 8px 2px 8px;
-  margin-bottom: 1px;
-  text-decoration: none;
-  border-bottom: 2px solid transparent; }
+  padding: 4px 8px 2px 8px; }
 
 section {
-  padding-bottom: 4rem;
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 3rem; }
+  padding-bottom: 2rem;
+  margin-bottom: 1rem; }
 
-.intro {
+.uvod {
   font-style: italic;
-  position: relative; }
+  margin: 3rem 0 0 0;
+  position: relative;
+  font-size: 2.6rem; }
+
+.pojam {
+  border-bottom: 2px solid #ddd; }
+
+.podnozje {
+  background: #111;
+  padding: 6rem 0;
+  margin-top: 8rem; }
+  .podnozje h2 {
+    color: white; }
+  .podnozje p {
+    color: #999; }
+
+.l-sadrzaj {
+  max-width: 65em;
+  margin: 0 auto;
+  padding: 2rem; }
