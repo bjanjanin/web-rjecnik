@@ -166,6 +166,15 @@ section {
   }
 }
 
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .sadrzaj {
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 60rem;
+  }
+}
+
 .uvod {
   font-style: italic;
   margin: 3rem 0 0 0;
@@ -221,7 +230,7 @@ section {
 .indeks {
   display: none;
 }
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1000px) {
   .indeks {
     display: inline-block;
   }
