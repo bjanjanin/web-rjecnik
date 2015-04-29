@@ -1,15 +1,16 @@
 a:link, a:visited {
-  color: #CA3538;
+  color: #c33;
   text-decoration: none;
   border-bottom: 2px solid transparent;
+  transition: all 0.1s linear;
 }
 a:hover {
-  color: #CA3538;
-  border-bottom: 2px solid #CA3538;
+  color: #c33;
+  border-bottom: 2px solid #c33;
 }
 a:active {
-  color: red;
-  border-bottom: 2px solid red;
+  color: #111;
+  border-bottom: 2px solid #111;
 }
 
 abbr {
@@ -69,6 +70,12 @@ h2 {
     //padding-top: 8rem;
   }
 }
+
+a.skok-popis {
+  font-size: 1.6rem;
+  color: #999;
+}
+
 h3 {
   line-height: 1.4;
   padding-top: 2rem;
@@ -97,9 +104,7 @@ p {
 }
 
 ul {
-  color: #666;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   font-size: 1.6rem;
 }
 @media only screen and (min-width: 860px) {
@@ -108,7 +113,7 @@ ul {
   }
 }
 
-nav {
+.nav-main {
   background: #fff;
   width: 100%;
   position: fixed;
@@ -116,31 +121,34 @@ nav {
   left: 0;
   top: 0;
   font-weight: bold;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
 }
 
-nav ul {
+.nav-main ul {
   padding-left: 0;
   margin: 8px 0;
   text-align: center;
   font-size: 1.6rem;
 }
 @media only screen and (min-width: 860px) {
-  nav ul {
+  .nav-main ul {
     font-size: 2rem;
   }
 }
 
-nav li {
+.nav-main li {
   text-align: center;
   display: inline-block;
 }
 
-nav a:link, nav a:visited {
+.nav-main a:link, .nav-main a:visited {
   display: inline-block;
   padding: 4px 8px 2px 8px;
 }
 
-nav a.bez-unosa {
+.nav-main a.bez-unosa {
   color: #999;
   &:hover {
     border: 0;
@@ -221,7 +229,7 @@ section {
 @media only screen and (min-width: 640px) {
   .mikroskop {
     display: block;
-    margin: -50px 0 4em 0;
+    margin: -60px 0 4em 0;
     width: 100%;
     max-width: 500px;
   }
@@ -236,3 +244,37 @@ section {
   }
 }
 
+.popis-pojmova {
+  ul {
+    padding: 0;
+    color: #ccc;
+  }
+  ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 2rem;
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.vrh {
+  display: block;
+  background: white;
+  min-height: 50px;
+  min-width: 50px;
+  line-height: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+  opacity: .95;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+}

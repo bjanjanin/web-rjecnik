@@ -1,61 +1,14 @@
 <!-- @include _header -->
-<div class="wrap">
-
   <section class="l-sadrzaj">
     
     <div class="indeks">
       <img src="<!-- @path mikroskop.jpg -->" class="mikroskop" alt="Ilustracija mikroskopa">
-      
-      <navs>
-        <h3>Popis pojmova</h3>
-        <ul>
-          <li>
-            <a href="#accessibility">Accessibility (<em>pristupačnost</em>)</a>
-          </li>
-          <li>
-            <a href="#accesskey">Accesskey</a>
-          </li>
-          <li>
-            <a href="#ajax">AJAX</a>
-          </li>
-          <li>
-            <a href="#aplikacija">Aplikacija</a>
-          </li>
-          <li>
-            <a href="#best-practice">Best Practice</a>
-          </li>
-          <li>
-            <a href="#box-model">Box Model</a>
-          </li>
-          <li>
-            <a href="#chrome">Chrome</a>
-          </li>
-          <li>
-            <a href="#client-side">Client-side</a>
-          </li>
-          <li>
-            <a href="#cms">CMS</a>
-          </li>
-          <li>
-            <a href="#css">CSS</a>
-          </li>
-          <li>
-            <a href="#div">Div</a>
-          </li>
-          <li>
-            <a href="#doctype">Doctype</a>
-          </li>
-          <li>
-            <a href="#ftp">FTP (<em>File Transfer Protocol</em>)</a>
-          </li>
-        </ul>
-      </nav>
-
+      <!-- @include _popis -->
     </div>
     
     <div class="sadrzaj">
       <h1>Web dizajn rječnik</h1>
-      <p class="uvod">Ovaj rječnik je namijenjen prvenstveno laicima, naručiteljima web stranica i početnicima u web dizajnu. Sadrži neke od osnovnih pojmova s kojima se naručitelji web stranica i web dizajneri susreću, te ih ukratko pokušava objasniti.</p>
+      <p class="uvod">Ovaj rječnik je namijenjen prvenstveno naručiteljima web stranica, početnicima u web dizajnu i laicima. Sadrži neke od osnovnih pojmova s kojima se naručitelji web stranica i web dizajneri susreću, te ih ukratko pokušava objasniti.</p>
       
       <!-- @include _nav -->
         <h2 class="slovo" id="a">A</h2>
@@ -66,39 +19,39 @@
           <p><em>Accessibility</em> <em>(pristupačnost)</em> se odnosi na tehnike prilagođavanja stranice osobama sa posebnim potrebama. Kada je stranica pristipačna <em>(accessible)</em>, svaki korisnik može pristupiti sadržaju na web stranici, čak i kada ima problema sa primjerice vidom ili sluhom, ili je pak primoran za navigaciju koristiti isključivo tipkovnicu.</p>
         </div>
         
-        <div class="pojam">
+        <div class="pojam" id="accesskey">
           <h3>Accesskey</h3>
       
           <p><em>Accesskeys</em>, odnosno <em>tipke za pristupačnost</em>, se koriste u tipkovničkim kraticama kako bi korisnik brzo došao do određenog dijela stranice.</p>
         </div>
         
-        <div class="pojam">
+        <div class="pojam" id="ajax">
           <h3>AJAX</h3>
       
           <p><abbr title="Asynchronous JavaScript and XML">AJAX</abbr> je kratica za <em>Asynchronous JavaScript and <abbr title="Extensible Markup Language">XML</abbr></em> i predstavlja tehniku koja kombinira razne tehnologije za izradu interaktivnih aplikacija.</p>
         </div>
         
-        <div class="pojam">
+        <div class="pojam" id="aplikacija">
           <h3>Aplikacija</h3>
       
-          <p>Aplikacija je sinonim za program. Ona može biti <em>native</em> (namijenjena za instaliranje na uređaj) ili na webu (pregledavate ju ako imate pristup internetu). Aplikacijom najčešće zovemo softver koji preuzmemo i koristimo na mobilnim uređajima, no sve se češće koristi i za web softver i softver na Mac računalima.</p>
+          <p>Aplikacija je sinonim za program. Razlikujemo <em>native</em> (namijenjena za instaliranje na uređaj) i <em>web</em> (pregledavate ju ako imate pristup internetu) aplikacije. Aplikacijom najčešće zovemo softver koji preuzmemo i koristimo na mobilnim uređajima, no taj se pojam sve češće koristi i za web softver i softver na Mac računalima.</p>
         </div>
       
         <h2 class="slovo" id="b">B</h2>
   
-        <div class="pojam">
+        <div class="pojam" id="best-practice">
           <h3>Best Practice</h3>
       
           <p>Pojam <em>best practice</em> se odnosi na način izrade i tehnologije koje se od struke smatra preporučenima, odnosno najboljima. Najboljim se praksama primjerice smatra korištenje web standarada, responzivnog dizajna, <em>mobile first</em> pristupa, itd.</p>
         </div>
         
-        <div class="pojam">
+        <div class="pojam" id="box-model">
           <h3>Box Model</h3>
       
           <p><em>Box Model</em> (<em>model kutije</em>) u <abbr title="Cascading Style Sheets">CSS</abbr>-u se odnosi na model po kojem se elementi stranice formatiraju. Svaki element je dvodimenzionalni četverokutni objekt, odnosno svojevrsna <em>kutija</em>. Model te kutije čine <em>padding</em>, <em>margin</em> i <em>border</em>.</p>
         </div>
   
-      <div class="pojam">
+      <div class="pojam" id="browser">
         <h3>Browser</h3>
         
         <p><em>Browser</em> ili <em>web preglednik</em> je aplikacija za pregledavanje web stranica. Neki od popularnih preglednika su Chrome, Firefox i Internet Explorer.</p>
@@ -106,7 +59,7 @@
       
       <h2 class="slovo" id="c">C</h2>
       
-      <div class="pojam">
+      <div class="pojam" id="chrome">
         <h3>Chrome</h3>
   
         <p>Google Chrome je Jedan od najkorištenijih web preglednika. Pojam <em>chrome</em> se često koristi i za dio korisničkog sučelja koji čini okvir prozora. U tom se dijelu obično nalaze razne tipke, polja, kartice (<em>tabovi</em>), itd.</p>
@@ -118,7 +71,7 @@
         <p>Pojam <em>client-side</em> se odnosi na tehnologije koje koristi i <em>probavlja</em> web preglednik. Primjeri takvih tehnologija su HTML, CSS i JavaScript. <em>Client-side developerima</em> se nazivaju osobe koje se tim tehnologijama služe prilikom izrade stranica.</p>
       </div>
       
-      <div class="pojam">
+      <div class="pojam" id="cms">
         <h3>CMS</h3>
   
         <p><em>Content Management System</em> je sustav za održavanje web stranica. Jedan od najpopularnijih CMS-ova je <a href="https://wordpress.org">Wordpress</a>.</p>
@@ -132,39 +85,45 @@
       
       <h2 class="slovo" id="d">D</h2>
       
-      <div class="pojam">
+      <div class="pojam" id="div">
         <h3>Div</h3>
         
         <p><em>Div</em> je jedan od elemenata u HTML jeziku, te je skraćenica engleske riječi divison (<em>podjela</em>). Ovaj HTML element se koristi za grupiranje sadržaja.</p>
       </div>
       
-      <div class="pojam">
+      <div class="pojam" id="doctype">
         <h3>Doctype</h3>
         
         <p><em>Doctype</em> (<em>Document Type Declaration</em>) je naredba na vrhu HTML dokumenta koja pregledniku govori koju verzijom HTML-a se stranica služi.</p>
       </div>
+
+      <div class="pojam" id="domena">
+        <h3>Domain (<em>domena</em>)</h3>
+        
+        <p>Domena je sinonim za web adresu. Primjera radi, domena pretraživača Google je <em>google.hr</em>.<p>
+      </div>
   
       <h2 class="slovo" id="f">F</h2>
       
-      <div class="pojam">
+      <div class="pojam" id="firefox">
         <h3>Firefox</h3>
         
         <p><em>Firefox</em> je jedan od najpopularnijih web preglednika. Proizvodi ga tvrtka Mozilla.</p>
       </div>
       
-      <div class="pojam">
+      <div class="pojam" id="flash">
         <h3>Flash</h3>
         
         <p>Multimedijski alat baziran na vektorskoj tehnologiji. Često se koristi na web stranicama, najčešće u kombinaciji s drugim tehnologijama. Sve se rjeđe upotrebljava za izradu dijelova web stranice, s obzirom na brojne nedostatke (poput poteškoća kod indeksiranja od strane tražilica i manjka fleksibilnosti).</p>
       </div>
       
-      <div class="pojam">
+      <div class="pojam" id="font">
         <h3>Font</h3>
         
         <p><em>Font</em> je dizajnirana skupina slova. Jedan ili više fontova čine <em>typeface</em>, odnosno <em>pismo</em>. Primjerice, <em>pismo</em> bi bilo <em>Helvetica</em>, dok bi <em>font</em> bila jedna varijanta tog pisma, poput <em>Helvetica Bold</em>.</p>
       </div>
       
-      <div class="pojam">
+      <div class="pojam" id="ftp">
         <h3>FTP (File Transfer Protocol)</h3>
   
         <p>FTP je metoda za prebacivanje datoteka na server. Često se koristi kao metoda prebacivanja stranica na internet (<em>upload</em>).</p>
@@ -172,33 +131,33 @@
       
       <h2 class="slovo" id="h">H</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="hosting">
         <h3>Hosting</h3>
   
         <p><em>Hosting</em> je smještaj web stranica na serveru ili <em>hostu</em>. Zakup prostora na serveru se najčešće plaća pružatelju <em>hosting</em> usluga.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="html">
         <h3>HTML</h3>
   
         <p>HTML je kratica za HyperText Markup Language, jezik kojim se izrađuju web stranice. HTML-om se formatira sadržaj web stranica.</p>
       </div>
   
-      <div class="pojam">
-        <h3>Hyperlink</h3>
+      <div class="pojam" id="hyperlink">
+        <h3>Hyperlink (<em>link</em>)</h3>
   
         <p><em>Hyperlink</em> (ili kraće <em>link</em>), je poveznica s jedne na drugu web stranicu. <em>Link</em> je najčešće dio teksta ili grafike.</p>
       </div>
   
       <h2 class="slovo" id="i">I</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="ia">
         <h3>Information Architecture (<em>informacijska arhitektura</em>)</h3>
   
         <p>Informacijska arhitektura bavi se organizacijom sadržaja na web stranicama.</p>
       </div>
       
-      <div class="pojam">
+      <div class="pojam" id="ie">
         <h3>Internet Explorer</h3>
         
         <p>IE je jedan od popularnijih web preglednika za Windows računala. Proizvodi ga tvrtka Microsoft.</p>
@@ -206,39 +165,39 @@
       
       <h2 class="slovo" id="j">J</h2>
       
-      <div class="pojam">
+      <div class="pojam" id="js">
         <h3>JavaScript</h3>
         
         <p>JavaScript je popularni jezik, koji se koristi za izradu web stranica.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="jpeg">
         <h3>JPEG</h3>
         
         <p>JPEG (.jpeg, .jpg) je grafički format koji se koristi za sažimanje fotografija i raznih grafika za web stranice.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="jquery">
         <h3>jQuery</h3>
         
-        <p>jQuery je jedna od najpopularnijih JavaScript biblioteka.</p>
+        <p>jQuery je jedna od najpopularnijih JavaScript biblioteka, koja omogućava brz razvoj stranica.</p>
       </div>
       
       <h2 class="slovo" id="m">M</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="mobile-first">
         <h3>Mobile First</h3>
         
         <p>Pojam <em>Mobile First</em> se odnosi na process dizajniranja koji kreće od najmanjih rezolucija, prema većima. Na taj se način, s obzirom na veličinu ekrana, prvo posvećujemo najbitnijim informacijama.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="mockup">
         <h3>Mockup</h3>
         
         <p><em>Mockup</em> je napredna skica web stranice. Obično se izradi kao statički ili interaktivni predložak i služi kao korak prema sljedećoj fazi izrade.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="mysql">
         <h3>MySQL</h3>
         
         <p>MySQL je najpopularniji sistem za upravljanje bazama podataka.</p>
@@ -246,13 +205,13 @@
       
       <h2 class="slovo" id="o">O</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="opera">
         <h3>Opera</h3>
         
         <p>Opera je jedan od najkorištenijih web preglednika.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="osx">
         <h3>OS X</h3>
         
         <p>OS X je deseta verzija operativnog sistema za Apple računala (<em>X</em> se izgovara <em>ten</em>).</p>
@@ -260,13 +219,13 @@
       
       <h2 class="slovo" id="p">P</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="php">
         <h3>PHP</h3>
         
         <p>PHP je popularni jezik koji se izvodi na serveru a može koristiti u HTML-u.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="png">
         <h3>PNG</h3>
         
         <p>PNG (.png) je jedan od najpopularnijih grafičkih formata, koji se danas na stranicama koristi kao zamjena za GIF (.gif). Glavna odlika PNG formata je što podržava varijabilnu transparentnost.</p>
@@ -274,19 +233,19 @@
       
       <h2 class="slovo" id="r">R</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="readability">
         <h3>Readability (<em>čitljivost</em>)</h3>
         
         <p><em>Readability</em> je lakoća čitanja i razumijevanja teksta. Kako bi tekst bio čitljiviji, moramo odabrati odgovarajući font, kontrast boja, veličinu, itd.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="rwd">
         <h3>Responzivni web dizajn</h3>
         
         <p>Responsizni web dizajn podrazumijeva korištenje tehnika i tehnologija za prilagodbu web stranica uređaju, odnosno veličini ekrana. Responzivne stranice će se tako prilagoditi i malim ekranima mobilnog telefona i velikim ekranima stolnih računala.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="retina">
         <h3>Retina</h3>
         
         <p><em>Retina</em> je naziv za ekrane visoke rezolucije (gustoće pixela). <em>Retina</em> tehnologiju podržavaju primjerice novija Apple računala i mobilni uređaji, kao što su iPhone i iPad.</p>
@@ -294,19 +253,19 @@
       
       <h2 class="slovo" id="s">S</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="safari">
         <h3>Safari</h3>
         
         <p>Safari je jedan od najpopularnijih web preglednika. Koristi jednaki softver (tzv. <em>engine</em>) kao i <em>Chrome</em>, što znači da će stranice u ova dva preglednika izgledati jednako.</p>
       </div>
       
-      <div class="pojam">
+      <div class="pojam" id="seo">
         <h3>Search Engine Optimization</h3>
         
         <p>Search Engine Optimization (skraćeno SEO) je pojam koji se odnosi na optimizaciju stranica za tražilice. Bolje optimizirane stranice se mogu lakše pronaći, odnosno više su pozicionirane u rezultatima pretraživanja.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="server-side">
         <h3>Server-side</h3>
         
         <p>Pojam <em>server-side</em> odnosi se na tehnlogije koje koristi server, kao što je primjerice PHP.</p>
@@ -314,7 +273,7 @@
       
       <h2 class="slovo" id="t">T</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="typeface">
         <h3>Typeface (<em>pismo</em>)</h3>
         
         <p><em>Typeface</em> je dizajnirana skupina slova, odnosno <em>pismo</em>. Sastoji se od jednog ili više fontova. Popularni primjeri pisma na WWW-u su Georgia, Verdana i Times New Roman. Georgia pismo se primjerice sastoji od više fontova, kao što su Georgia Bold i Georgia Italic.</p>
@@ -322,7 +281,7 @@
       
       <h2 class="slovo" id="u">U</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="usability">
         <h3>Usability</h3>
         
         <p><em>Usability</em> možemo prevesti kao <em>iskoristivost</em> web stranice. Ako je iskoristivost web stranice velika, tada je možemo koristiti s velikom lakoćom. Na iskoristivost utječe mnogo faktora, kao što su tipografija, dizajn stranice, informacijska arhitektura, itd..
@@ -335,15 +294,15 @@
         <p><em>User Experience</em> (ili, skraćeno, <em>UX</em>) je kvaliteta korisničnog iskustva prilikom interakcije s web stranicom. Kada spominjemo UX dizajnera, mislimo na osobu koja se bavi širokim spektrom poslova, kao što su skiciranje (<em>wireframing</em>), testiranje s korisnicima (<em>user testing</em>), A/B testiranje, izrada korisničkog sučelja (<em>UI design</em>), pristupačnost, itd.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="ui">
         <h3>User Interface (<em>korisničko sučelje</em>)</h3>
         
-        <p>Korisničko sučelje je ono što korisnik vidi i čime se služi na web stranici.</p>
+        <p>Korisničko sučelje je ono što korisnik vidi i čime se služi na web stranici. UI dizajner je osoba koja dizajnira korisničko sučelje, odnosno izgled web stranice. Dizajn korisničnog sučelja je podskup korisničkog iskustva.</p>
       </div>
       
       <h2 class="slovo" id="v">V</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="validation">
         <h3>Validation (<em>validacija</em>)</h3>
         
         <p>Validacija je proces provjeravanja ispravnosti HTML ili CSS koda.</p>
@@ -351,13 +310,13 @@
       
       <h2 class="slovo" id="w">W</h2>
   
-      <div class="pojam">
+      <div class="pojam" id="web-standardi">
         <h3>Web standardi</h3>
         
         <p>Web standardi su skupina pravila i smjernica za izradu web stranica.</p>
       </div>
   
-      <div class="pojam">
+      <div class="pojam" id="wireframe">
         <h3>Wireframe</h3>
         
         <p><em>Wireframe</em> je skica buduće stranice ili dijela. Na toj se skici prikazuje raspored elemenata i objašnjava njihova interakcija. Često se crta olovkom na papiru, kako bi se što brže izradila.</p>
@@ -366,7 +325,4 @@
     </div>
 
   </section>
-  
-</div>
-  
 <!-- @include _footer -->
