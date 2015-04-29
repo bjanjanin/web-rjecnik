@@ -262,7 +262,7 @@ section {
   }
 }
 
-.vrh {
+a.vrh {
   display: block;
   background: white;
   min-height: 45px;
@@ -278,6 +278,12 @@ section {
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
   -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
   box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+  border-top: 2px solid #c33;
+  border-bottom: 0;
+  &:hover {
+    min-height: 50px;
+    border-bottom: 0;
+  }
 }
 
 .prava {
@@ -286,6 +292,7 @@ section {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  font-weight: 600;
 }
 
 .o-rjecniku {
@@ -298,4 +305,9 @@ section {
     width: 45%;
     padding-right: 4%;
   }
+}
+
+.pregrada {
+  color: #555;
+  padding: 0 0.5rem;
 }

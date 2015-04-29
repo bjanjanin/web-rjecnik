@@ -195,7 +195,7 @@ section {
     left: 0;
     top: 0; }
 
-.vrh {
+a.vrh {
   display: block;
   background: white;
   min-height: 45px;
@@ -210,14 +210,20 @@ section {
   font-weight: 600;
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+  border-top: 2px solid #c33;
+  border-bottom: 0; }
+  a.vrh:hover {
+    min-height: 50px;
+    border-bottom: 0; }
 
 .prava {
   border-top: 1px solid #333;
   padding: 1rem 0;
   font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  font-weight: 600; }
 
 .o-rjecniku {
   display: inline-block;
@@ -227,3 +233,6 @@ section {
   .o-rjecniku {
     width: 45%;
     padding-right: 4%; } }
+.pregrada {
+  color: #555;
+  padding: 0 0.5rem; }
