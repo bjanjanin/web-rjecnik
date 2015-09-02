@@ -27,38 +27,40 @@ html {
   color: #444;
   font-weight: 300;
   border-left: 0;
-  background: #f2f2f2;
+  background: #f2f2f2 url("bg.png");
 }
 
 body {
-  font-size: 1rem;
+  font-size: 2.1rem;
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   color: #111;
   line-height: 1.2;
-  margin: 10rem 0 6rem 0;
+  //margin: 10rem 0 6rem 0;
   font-weight: 600;
 }
 @media only screen and (min-width: 640px) {
   h1 {
-    font-size: 6.8rem;
+    font-size: 7.2rem;
   }
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: #000;
   font-weight: 600;
-  padding-top: 2rem;
-  margin-bottom: 1.5rem;
+  //padding-top: 2rem;
+  //margin-bottom: 1.5rem;
 }
-.slovo {
+h2.slovo {
   color: #111;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 4.8rem !important;
   font-weight: bold;
-  padding-top: 8rem;
+  margin: 0rem 0 0 0 !important;
+  padding-top: 6.1rem;
+  background: red;
 }
 @media only screen and (min-width: 640px) {
   .slovo {
@@ -77,29 +79,29 @@ a.skok-popis {
 }
 
 h3 {
-  line-height: 1.4;
   color: #000;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  //margin-bottom: 1.5rem;
+  margin: 0;
 }
 @media only screen and (min-width: 640px) {
   h3 {
-    padding-top: 2rem;
+    //padding-top: 2rem;
   }
 }
 
 p {
   color: #666;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  //margin-bottom: 1.5rem;
   font-size: 1.6rem;
   font-weight: 300;
+  margin: 0;
 }
 @media only screen and (min-width: 860px) {
   p {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 2.1rem;
+    //margin-bottom: 2rem;
   }
 }
 
@@ -113,7 +115,7 @@ ul {
   }
 }
 
-.nav-main {
+.glavna-navigacija {
   background: #fff;
   width: 100%;
   position: fixed;
@@ -121,34 +123,34 @@ ul {
   left: 0;
   top: 0;
   font-weight: bold;
+  padding: 0.5rem 0;
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
   -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
   box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
 }
 
-.nav-main ul {
-  padding-left: 0;
-  margin: 8px 0;
+.glavna-navigacija ul {
   text-align: center;
   font-size: 1.6rem;
+  margin: 0 !important;
 }
 @media only screen and (min-width: 860px) {
-  .nav-main ul {
+  .glavna-navigacija ul {
     font-size: 2rem;
   }
 }
 
-.nav-main li {
+.glavna-navigacija li {
   text-align: center;
   display: inline-block;
 }
 
-.nav-main a:link, .nav-main a:visited {
+.glavna-navigacija a:link, .glavna-navigacija a:visited {
   display: inline-block;
   padding: 4px 8px 2px 8px;
 }
 
-.nav-main a.bez-unosa {
+.glavna-navigacija a.bez-unosa {
   color: #999;
   &:hover {
     border: 0;
@@ -157,8 +159,8 @@ ul {
 }
 
 section {
-  padding-bottom: 2rem;
-  margin-bottom: 1rem;
+  //padding-bottom: 2rem;
+  //margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -183,21 +185,32 @@ section {
   }
 }
 
-.uvod {
+p.uvod {
   font-style: italic;
-  margin: 3rem 0 0 0;
   position: relative;
-  font-size: 2rem;
+  font-size: 2.1rem;
+  margin-bottom: 9.3rem !important;
 }
 @media only screen and (min-width: 640px) {
-  .uvod {
-    font-size: 2.6rem;
+  p.uvod {
+    font-size: 2.4rem !important;
   }
 }
 
 .pojam {
-  border-bottom: 2px solid #ddd;
-  padding-top: 3rem;
+  //border-bottom: 2px solid #ddd;
+  //padding-top: 1.55rem;
+  //margin-top: -2px;
+  position: relative;
+  &:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+  }
 }
 
 .podnozje {
@@ -218,9 +231,9 @@ section {
 }
 
 .l-omot {
-  max-width: 105em;
+  max-width: 105rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .mikroskop {
@@ -311,3 +324,14 @@ a.vrh {
   color: #555;
   padding: 0 0.5rem;
 }
+
+.vizualno-sakriven {
+  right: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+ p { font-size: 100% !important; } /* 21px */
+h1 { font-size: 7.2rem !important; margin: 12.5rem 0 6.2rem 0 } /* 72px */
+h2, h3, p, ul { font-size: 2.1rem !important; margin-bottom: 3.1rem !important; } /* 72px */
+h2 { font-size: 2.1rem !important; } /* 21px */
